@@ -4,13 +4,13 @@ resource "aws_eks_cluster" "eks_cluster" {
 
   vpc_config {
     subnet_ids = [
-     var.eks_subnet_public-1a,
-     var.eks_subnet_public-1b
+      var.eks_subnet_public-1a,
+      var.eks_subnet_public-1b
     ]
   }
 
-  depends_on = [ 
+  depends_on = [
     aws_iam_role_policy_attachment.eks_cluster_role_attachment
-   ]
+  ]
 
 }
