@@ -1,4 +1,4 @@
-resource "kubernetes_service_account" "example" {
+resource "kubernetes_service_account" "eks_controller_service-account" {
   metadata {
     name      = "aws-load-balancer-controller"
     namespace = "kube-system"
