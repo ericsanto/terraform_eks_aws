@@ -8,3 +8,11 @@ variable "cidr_block" {
 variable "project_name" {
   type = string
 }
+
+variable "region" {
+  type = string
+}
+
+variable "tags" {
+  type = map(any)
+}
